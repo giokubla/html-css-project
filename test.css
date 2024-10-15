@@ -1,0 +1,46 @@
+/* CSS styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  max-width: 1440px;
+  height: 100px;
+  align-items: center;
+  background: rgb(4, 4, 53);
+  display: flex;
+  color: white;
+  padding-inline: 30px;
+  border-radius: 20px;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+header .burger {
+  display: none;
+  position: relative;
+}
+header .burger input {
+  position: absolute;
+  left: 0.5px;
+  top: 1px;
+}
+.burger_menu {
+  display: none;
+}
+@media only screen and (max-width: 520px) {
+  header ul {
+    display: none !important;
+  }
+  header .burger {
+    display: block !important;
+  }
+  .burger_menu {
+    display: block;
+  }
+}
