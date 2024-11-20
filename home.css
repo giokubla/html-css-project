@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --a-hover-color: #757575;
+  --badge-background: #121212;
+  --about-background: #f7f6f6;
+}
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section.products {
+  padding-inline: 1rem;
+  max-width: 1640px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(clamp(200px, 100%, 300px), 1fr)
+  );
+  gap: 40px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+section.products .card {
+  /* height: 500px; */
+  gap: 30px;
+  cursor: pointer;
+}
+section.products .card:hover #hover_image {
+  opacity: 1;
+}
+section.products .card .add-button {
+  transition: 0.5s ease-in-out;
+}
+section.products .card:hover .add-button {
+  opacity: 1 !important;
+}
+section.products .card .image_container {
+  position: relative;
+}
+section.products .card .image_container .badge {
+  background-color: var(--badge-background);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+section.products .card #hover_image {
+  position: absolute;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  border-radius: 5%;
+}
+section.about {
+  background: var(--about-background);
+  min-height: 576px;
+}
+.chat {
+  height: 64px;
+  width: 64px;
+  right: 18px;
+  bottom: 18px;
+  background: var(--badge-background);
+}
+.chat i {
+  color: white;
+}

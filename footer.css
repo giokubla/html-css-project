@@ -1,0 +1,33 @@
+a.footer-link {
+  color: #eee;
+}
+footer .upper {
+  min-height: 400px;
+  background: black;
+  color: white;
+}
+.form-input {
+  background: transparent;
+  border-bottom: 1px solid #fff !important;
+  outline: none;
+  border-radius: 0;
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+button.subscribe:hover {
+  background: black !important;
+  color: white;
+  border: 1px solid #eee;
+}
+.form-input:invalid {
+  background: black !important;
+  color: white;
+
+  border-color: red !important;
+}
+.form-input:invalid + .error-message {
+  display: block !important;
+}
